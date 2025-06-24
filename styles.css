@@ -15,7 +15,6 @@ body{
 
 main{
   margin: 0 12rem;
-
 }
 html{
   scroll-behavior: smooth;
@@ -77,7 +76,9 @@ html{
     gap: 30px;
     
   }
-
+.nav-links a:hover{
+  color: aqua;
+}
  
   /* Home Section  */
   .home-section {
@@ -113,13 +114,19 @@ html{
   margin-bottom: 30px;
 }
 
-.explore-btn {
+/* .explore-btn {
   padding: 10px 32px;
   background-color: aqua;
   font-size: 20px;
   border: none;
   border-radius: 15px;
   cursor: pointer;
+  color: #191C2B;
+} */
+
+.explore-btn:hover{
+  background-color: #191C2B;
+  color: aqua ;
 }
 
 .right-home {
@@ -129,6 +136,11 @@ html{
   flex: 1;
   min-width: 280px;
   padding: 10px;
+}
+
+.right-home img:hover{
+transform: scale(1.02);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.9);
 }
 
 .right-home img {
@@ -225,6 +237,11 @@ html{
   box-shadow: 0px 0px 15px rgba(0, 248, 41, 0.9);
 }
 
+.left-about img:hover{
+transform: scale(1.02);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.9);
+}
+
 .right-about {
   display: flex;
   flex-direction: column;
@@ -252,6 +269,11 @@ html{
   border: none;
   border-radius: 15px;
   cursor: pointer;
+}
+
+.explore-btn:hover{
+  background-color: #191C2B;
+  color: aqua ;
 }
 
 /* ======= Responsive Design ======= */
@@ -362,6 +384,12 @@ html{
 .r2 p {
   color: white;
   font-size: 15px;
+}
+
+.r1:hover, .r2:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.9);
+
 }
 
 /* ========= Responsive Design ========= */
@@ -509,6 +537,12 @@ html{
   padding: 15px 10px;
 }
 
+.games:hover, .games:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.9);
+
+}
+
 .games h3{
   font-size: 30px;
   color: white;
@@ -560,6 +594,12 @@ html{
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   padding: 25px;
   box-shadow: 0px 0px 10px rgba(255, 2, 2, 0.9);
+}
+
+.testimonial:hover, .testimonial:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.9);
+
 }
 
 .testimonial img {
@@ -630,9 +670,11 @@ html{
   font-weight: bold;
 }
 
-/* .contact-form form button:hover {
-  background: #e39e3f;
-} */
+.contact-form form button:hover {
+  background-color: black;
+  color: aqua ;
+}
+
 
 .contact-details p {
   margin: 8px 0;
