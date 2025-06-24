@@ -9,6 +9,7 @@ body{
   /* background-repeat: no-repeat; */
   background-size: cover;
   background-position: center;
+  /* background-attachment: fixed; */
   height: 100%;
 }
 
@@ -39,22 +40,26 @@ html{
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
-    top: 0;
-    z-index: 1000;
-    position: sticky;
-  }
-  
-  .logo{
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    margin-left: 20px
+    transition: background 0.3s;
     
   }
   
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 10px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
   .nav-bar a{
     display: flex;
     align-items: center;
@@ -66,15 +71,18 @@ html{
   
   .nav-links{
     display: flex;
-    align-items: center;
+    flex: 1;
+    /* align-items: center; */
     justify-content: center;
     gap: 30px;
     
   }
-  
+
+ 
   /* Home Section  */
   .home-section {
   padding: 20px;
+  
 }
 
 .home-container {
@@ -84,7 +92,7 @@ html{
   flex-direction: row;
   padding: 50px 0px;
   gap: 20px;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-wrap: wrap; 
 }
 
 .left-home {
@@ -193,7 +201,7 @@ html{
   justify-content: space-around;
   flex-direction: row;
   gap: 50px;
-  flex-wrap: wrap; /* allow wrapping on small screens */
+  flex-wrap: wrap; 
   padding: 50px 0;
 }
 
@@ -313,7 +321,7 @@ html{
 .services-container2 {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap; /* wrap cards for smaller screens */
+  flex-wrap: wrap; 
   gap: 30px;
   width: 100%;
   margin-bottom: 40px;
@@ -325,7 +333,7 @@ html{
   border-radius: 15px;
   box-shadow: 0px 0px 15px rgba(52, 107, 189, 0.9);
   padding: 20px;
-  width: 300px; /* fixed width that scales better */
+  width: 300px; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -361,7 +369,7 @@ html{
 @media screen and (max-width: 992px) {
   .r1,
   .r2 {
-    width: 45%; /* two cards per row */
+    width: 45%; 
   }
 }
 
@@ -372,7 +380,7 @@ html{
 
   .r1,
   .r2 {
-    width: 100%; /* full width on small screens */
+    width: 100%;
   }
 
   .r1 h3,
@@ -387,6 +395,7 @@ html{
 }
 
 /* Features Section  */
+
 .features-section {
   display: flex;
   flex-direction: column;
@@ -401,19 +410,20 @@ html{
   text-align: center;
 }
 
-/* Shared styles for both containers */
+
 .features-container1,
 .features-container2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap; /* Enables responsiveness */
+  flex-wrap: wrap;
   gap: 30px;
   width: 100%;
   margin-bottom: 40px;
 }
 
 /* Optional card styling example (can be customized) */
+
 .feature-card {
   background-color: #191C2B;
   width: 300px;
@@ -516,7 +526,7 @@ html{
 .download-btn{
   padding: 10px 32px;
   background-color: aqua;
-  font-size: 20px;
+  font-size: 15px;
   border: none;
   border-radius: 15px;
 }
@@ -642,4 +652,3 @@ html{
   font-size: 0.95rem;
   color: #555;
 }
-
