@@ -680,14 +680,33 @@ transform: scale(1.02);
   margin: 8px 0;
   color: white;
 }
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
 
 .social-links a {
-  display: inline-block;
-  margin: 6px 10px 6px 0;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: aqua;
   font-weight: 500;
+  font-size: 16px;
+  transition: transform 0.2s ease;
 }
+
+.social-links a:hover {
+  transform: scale(1.05);
+}
+
+.social-links img {
+  height: 20px;
+  width: 20px;  
+  margin-right: 8px;
+}
+
 
 .about-company {
   margin-top: 20px;
